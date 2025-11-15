@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00d2ff;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        background: #222;
+        width: 200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        border-radius: 10px;
+        transition: 0.4s ease;
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        right: 20px;
+    }
+
+    .navbar a {
+        margin: 0;
+    }
+}
+
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    color: #00d2ff;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.home-content p {
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+/* Social Icons */
+.social-media a {
+    color: #fff;
+    font-size: 26px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #00d2ff;
+}
+
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 28px;
+    background: #00d2ff;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.section {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.section li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+
+.about {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
